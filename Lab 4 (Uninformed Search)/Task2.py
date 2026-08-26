@@ -1,3 +1,8 @@
+# Task#2:
+# Implement any of uninformed search algorithm to find the path from initial state to the goal state.
+# Show the results by considering initial(Arad) and goal(Bucharest) states. Provide the reason for the
+# choice of algorithm.
+
 graph = {
     'Arad': {'Zerind': 75, 'Timisoara': 118, 'Sibiu': 140},
     'Zerind': {'Arad': 75, 'Oradea': 71},
