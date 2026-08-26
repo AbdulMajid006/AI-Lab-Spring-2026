@@ -1,3 +1,4 @@
+# Task#3:
 # Create a list containing mixed data types.
 # Perform the following:
 # • Replace the second element
