@@ -1,3 +1,4 @@
+# Task#7:
 # Write a program that:
 # • Takes a number from the user
 # • Prints whether it is Prime or Not using a loop
