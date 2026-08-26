@@ -1,3 +1,8 @@
+# Task#3:
+# Here, we have a 3x3 matrix with movable tiles numbered from 1 to 8 with a blank space. The
+# tiles adjacent to the bland space can slide into that space. The objective is to reach specified
+# goal state.Implement an agent and show the final state.
+
 from collections import deque
 
 start_state = (
