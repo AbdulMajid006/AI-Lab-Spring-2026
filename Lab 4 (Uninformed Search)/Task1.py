@@ -1,3 +1,12 @@
+# Task#1:
+# Implement a binary tree of alphabets (26 nodes) where each node is initialized randomly with
+# an alphabet. Implement the following uninformed search algorithms to find the goal(G) node.
+# a) Breadth First Search
+# b) Depth First Search
+# c) Depth Limited Search
+# d) Iterative Deepening Search
+# e) Uniform Cost Search
+
 import random
 import string
 
