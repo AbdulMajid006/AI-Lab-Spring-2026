@@ -1,3 +1,4 @@
+# Task#2:
 # Take a string input from the user.
 # Display:
 # • First character
