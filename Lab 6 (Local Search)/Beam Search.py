@@ -1,12 +1,14 @@
 # Beam Search:
+# Beam Search is a heuristic search algorithm that navigates a search space by
+# systematically expanding the most promising nodes within a constrained set.
 # 1. Initialize the beam with the start state.
 # 2. Set the beam width k to a predefined value.
 # 3. While the termination condition is not met:
-#   ○ Generate all possible successor states for each state in the beam.
-#   ○ Calculate a heuristic score for each successor state.
-#   ○ Rank the successor states based on their scores.
-#   ○ Retain the top k states and discard the rest.
-#   ○ Update the beam with the retained states.
+#     ○ Generate all possible successor states for each state in the beam.
+#     ○ Calculate a heuristic score for each successor state.
+#     ○ Rank the successor states based on their scores.
+#     ○ Retain the top k states and discard the rest.
+#     ○ Update the beam with the retained states.
 # 4. Return the best path based on the final scores.
 
 import heapq
@@ -24,7 +26,6 @@ graph = {
     'L': [], 'M': []
 }
 
-# Beam Search function
 def beam_search(start, goal, beam_width=2):
     beam = [(0, [start])] 
     
