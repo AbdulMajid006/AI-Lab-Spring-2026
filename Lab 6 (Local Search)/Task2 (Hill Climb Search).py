@@ -1,3 +1,18 @@
+# Task#2:
+# Hill Climbing with Random Restart for N-Queens:
+# PROBLEM:
+# Implement Random Restart Hill Climbing to solve the N-Queens problem for N = 8 or N
+# = 10.
+# REQUIREMENTS
+# 1. Use the standard state representation (list of column positions).
+# 2. Implement:
+#     • Conflict calculation function
+#     • Neighbor generation
+#     • Hill Climbing search
+# 3. Add Random Restart:
+#     • If Hill Climbing gets stuck in a local optimum, restart with a new random state.
+# 4. Limit the number of restarts to 20 attempts.
+
 import random
 
 def calculate_conflicts(state):
