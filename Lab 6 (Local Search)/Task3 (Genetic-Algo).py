@@ -1,3 +1,26 @@
+# Task#3:
+# Genetic Algorithm for Timetable Optimization:
+# PROBLEM: Design a Genetic Algorithm to generate a class timetable for a small department.
+# PROBLEM CONSTRAINTS
+# • 5 teachers
+# • 5 courses
+# • 5 time slots per day
+# • 5 days per week
+# CONSTRAINTS:
+# 1. A teacher cannot teach two classes at the same time.
+# 2. Each course must be scheduled exactly 3 times per week.
+# 3. No teacher should teach more than 3 consecutive classes.
+
+# REQUIREMENTS
+# 1. Represent the timetable as a chromosome.
+# 2. Implement:
+#     • Population initialization
+#     • Fitness function (penalty-based)
+#     • Selection
+#     • Crossover
+#     • Mutation
+# 3. Run the algorithm for 200 generations.
+
 import random
 
 teachers = ['T1', 'T2', 'T3', 'T4', 'T5']
