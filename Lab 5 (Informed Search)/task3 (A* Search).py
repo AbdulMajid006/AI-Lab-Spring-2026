@@ -1,3 +1,13 @@
+# Task#3:
+# Emergency Evacuation Route Planning:
+# PROBLEM: Implement an A* search algorithm to determine the fastest evacuation route in an emergency
+# scenario. The algorithm must minimize travel time while avoiding blocked or unsafe routes.
+# REQUIREMENTS
+# • Implement A* with g(n), h(n), and f(n)
+# • Update OPEN and CLOSED lists properly
+# • Ignore unsafe or blocked edges
+# • Always select node with minimum f(n)
+
 graph = {
     'Entrance': {'Hallway1': 4, 'Hallway2': 3},
     'Hallway1': {'Stairs': 5, 'Elevator': 10},
