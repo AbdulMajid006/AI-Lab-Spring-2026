@@ -1,3 +1,15 @@
+# Task#2:
+# Robot Object Collection Problem:
+# PROBLEM:
+# A robot is placed in a grid environment containing multiple objects.
+# Using Greedy Best-First Search, the robot must collect the closest object first based on
+# heuristic distance.
+# REQUIREMENTS
+# • Use Greedy BFS with f(n) = h(n)
+# • Always move toward the nearest object
+# • Mark collected objects and continue search
+# • Avoid revisiting cells
+
 from queue import PriorityQueue
 
 grid = [
