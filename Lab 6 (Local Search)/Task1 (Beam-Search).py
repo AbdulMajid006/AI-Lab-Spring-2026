@@ -1,3 +1,19 @@
+# Task#1:
+# Beam Search with Dynamic Beam Width:
+# PROBLEM:
+# Modify the Beam Search algorithm so that the beam width automatically increases if the
+# search is not progressing toward the goal.
+# REQUIREMENTS
+# 1. Use the provided graph or create a larger graph with at least 15 nodes.
+# 2. Implement Beam Search with the following behavior:
+#     • Start with beam width = 2.
+#     • If the goal is not found after 3 levels, increase the beam width by 1.
+#     • Maximum beam width allowed = 5.
+# 3. Track and print:
+#     • Beam nodes at each level.
+#     • Current beam width.
+#     • Final path and total cost.
+
 import heapq
 
 graph = {
