@@ -1,3 +1,16 @@
+# Task#1:
+# Campus Navigation System:
+# PROBLEM:
+# Design a Best-First Search algorithm to find the most promising route between two
+# locations inside a university campus.
+# Each location is represented as a node, and heuristic values represent the estimated walking
+# distance to the destination.
+# REQUIREMENTS
+# • Implement Best-First Search using a priority queue
+# • Use heuristic values to select the next building
+# • Maintain OPEN and CLOSED lists
+# • Stop search once destination building is reached
+
 from queue import PriorityQueue
 
 campus_graph = {
