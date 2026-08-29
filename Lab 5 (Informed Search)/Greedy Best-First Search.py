@@ -1,6 +1,7 @@
 # A robot is placed in a grid environment containing multiple objects.
 # The robot must collect the closest object first based on heuristic distance.
 
+
 def getHeuristic(a, b):
     return abs(a[0] - b[0]) + abs(a[1] - b[1]) 
 
