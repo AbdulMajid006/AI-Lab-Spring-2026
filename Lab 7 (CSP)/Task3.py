@@ -1,3 +1,9 @@
+# Task#3:
+# Sudoku Game
+# Sudoku is a game in which we take a 2D grid and fill numbers in each cell in a
+# way that not any row, column, or sub grid contains duplicate numbers.
+# Model the solution using CSP.
+
 from ortools.sat.python import cp_model
 
 model = cp_model.CpModel()
