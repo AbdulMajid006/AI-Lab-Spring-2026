@@ -11,7 +11,6 @@
 #         → add to visited
 #         → add to queue
 # 5. if queue empties without finding goal → return failure
-
 # bfs goal-based agent
 
 
