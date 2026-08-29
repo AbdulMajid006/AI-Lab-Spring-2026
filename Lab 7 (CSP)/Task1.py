@@ -1,3 +1,10 @@
+# Task#1:
+# Graph Coloring:
+# Graph coloring is a problem in which we assign colors to the vertices/nodes of a
+# graph such that not two adjacent vertices have the same color.
+# Considering the following graph, implement CSP solution to find all the possible
+# ways of graph coloring using Red, Green, and Blue colors.
+
 from ortools.sat.python import cp_model
 
 model = cp_model.CpModel()
