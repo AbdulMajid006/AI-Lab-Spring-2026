@@ -1,18 +1,19 @@
-# Beam Search:
-# Beam Search is a heuristic search algorithm that navigates a search space by
-# systematically expanding the most promising nodes within a constrained set.
-# 1. Initialize the beam with the start state.
-# 2. Set the beam width k to a predefined value.
-# 3. While the termination condition is not met:
-#     ○ Generate all possible successor states for each state in the beam.
-#     ○ Calculate a heuristic score for each successor state.
-#     ○ Rank the successor states based on their scores.
-#     ○ Retain the top k states and discard the rest.
-#     ○ Update the beam with the retained states.
-# 4. Return the best path based on the final scores.
+# Beam Search explores a graph/tree by keeping only the best 'k' paths at each level (beam width).
 
-import heapq
+# 1. Initialize the beam with the start node as a path with cumulative cost 0.
+# 2. While the beam is not empty:
+#     Initialize an empty list of candidate paths.
+#     For each path in the beam:
+#         Check the last node:
+#             - If it is the goal, return the path and cost.
+#             Expand the node to generate successors:
+#             - For each neighbor, create new path & cumulative cost.
+#             - Add it to candidates.
+#     Keep only the top 'k' paths with lowest cumulative cost.
+# 3. If the beam empties without reaching the goal, return failure.
 
+
+# Graph representation (adjacency list with edge costs)
 graph = {
     'S': [('A', 3), ('B', 6), ('C', 5)],
     'A': [('D', 9), ('E', 8)],
@@ -26,38 +27,40 @@ graph = {
     'L': [], 'M': []
 }
 
-def beam_search(start, goal, beam_width=2):
-    beam = [(0, [start])] 
+def beam_search(start, goal, beam_width = 2):
+    beam = [(0, [start])]  # (cumulative_cost, path)
     
     while beam:
         candidates = []
-        # Expand each path in the beam
+        
+        # expand each path in the current beam
         for cost, path in beam:
             current_node = path[-1]
-            if current_node == goal:
-                return path, cost 
             
-            # Generate successors
+            # goal check
+            if current_node == goal:
+                return path, cost
+            
+            # generate successors
             for neighbor, edge_cost in graph.get(current_node, []):
                 new_cost = cost + edge_cost
                 new_path = path + [neighbor]
                 candidates.append((new_cost, new_path))
-                
-        if not candidates:
-            break
-            
-        # Select top-k paths based on the lowest cumulative cost
-        beam = heapq.nsmallest(beam_width, candidates, key=lambda x: x[0])
         
-    return None, float('inf') 
+        # sort candidates by cumulative cost and keep top-k
+        candidates.sort(key = lambda x: x[0])
+        beam = candidates[:beam_width]
+    
+    # goal not found
+    return None, float('inf')
 
 start_node = 'S'
 goal_node = 'L'
 beam_width = 3
 
-path, cost = beam_search(start=start_node, goal=goal_node, beam_width=beam_width)
+path, cost = beam_search(start_node, goal_node, beam_width)
 
 if path:
-    print(f"Path found: {' -> '.join(path)} with total cost: {cost}")
+    print(f"Path found: {' → '.join(path)} with total cost: {cost}")
 else:
     print("No path found.")
