@@ -1,3 +1,15 @@
+# Task#2:
+# University Wardrobe Schedular:
+# Design and model a CSP to automate your dressing schedule for a five-da
+# university week (Monday to Friday). The goal is to assign one unique outfit to
+# each day while adhering to specific style and availability constraints.
+# Given Resources:
+# Shalwar Qamees (SQ): 2 distinct sets.
+# Shirts (S): 5 distinct shirts;
+# Pants (P): 3 distinct pants.
+# You must wear Shirt-Paint on Monday and Thursday.
+# You must wear Shalwar Qamees on Friday.
+
 from ortools.sat.python import cp_model
 
 model = cp_model.CpModel()
