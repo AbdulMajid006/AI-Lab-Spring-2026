@@ -1,3 +1,20 @@
+# Task#3:
+# Minimax with Depth Limit & Heuristic:
+# Design a grid-based game (1D or 2D) where:
+# • Agent (Max) tries to reach a goal (+10 reward)
+# • Opponent (Min) tries to block (-10 penalty)
+# Task:
+# • Implement Minimax with:
+#     o Depth limit = 3
+#     o Custom heuristic function (e.g., distance to goal)
+# • Simulate at least 3 game states
+# • Print:
+#     o Chosen move at each step
+#     o Heuristic values at leaf nodes
+# • Compare:
+#     o Behavior with depth=2 vs depth=3
+
+
 import math
 
 GOAL = 5
