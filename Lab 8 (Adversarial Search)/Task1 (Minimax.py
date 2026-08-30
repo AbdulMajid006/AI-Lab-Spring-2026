@@ -1,3 +1,22 @@
+# Task#1:
+# Minimax on Custom Game Tree:
+# Given the following game tree:
+#             A (Max)
+#            /       \
+#       B (Min)       C (Min)
+#         / \          /   \
+#   D(Max)   E(Max)   F(Max) G(Max)
+#     / \     / \     / \     / \
+#     3 5     6 9     1 2     0 -1
+
+# • Apply the Minimax algorithm.
+# • Compute values for all internal nodes (D, E, F, G, B, C, A).
+# • Identify:
+# o Optimal value at root node A
+# o Best move for Max player
+# • Show step-by-step backtracking process.
+
+
 import math
 
 class Node:
