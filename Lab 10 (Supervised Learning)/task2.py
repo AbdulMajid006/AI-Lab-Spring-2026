@@ -1,3 +1,19 @@
+# Task#2:
+# Loan Approval Classification:
+# You are working for a bank to automate loan approvals. The dataset contains customer details
+# such as income, employment status, credit score, loan amount, and marital status. The goal is to
+# classify whether a loan should be approved (1) or rejected (0).
+# Perform the following tasks:
+# • Preprocess the dataset:
+#     o Handle missing values
+#     o Encode categorical variables (e.g., employment status, marital status)
+# • Perform feature selection to identify key factors influencing loan approval
+# • Train a classification model (e.g., Logistic Regression, Decision Tree)
+# • Split the dataset into training and testing sets
+# • Evaluate the model using metrics like accuracy, precision, recall, and F1-score
+# • Use the model to predict loan approval for a new applicant
+
+
 import pandas as pd
 import numpy as np
 
