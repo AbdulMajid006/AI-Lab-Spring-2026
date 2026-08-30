@@ -1,3 +1,20 @@
+# Task#4:
+# Alpha-Beta in Tic-Tac-Toe AI:
+# Implement a Tic-Tac-Toe AI Agent where:
+# • AI = Max player (X)
+# • Human = Min player (O)
+# Task:
+# 1. Implement:
+#     a. Alpha-Beta pruning algorithm
+#     b. Game board (3×3)
+# 2. AI should:
+#     a. Always play optimally
+#     b. Never lose (win or draw guaranteed)
+# 3. Display:
+#     a. Game tree depth explored
+#     b. Moves pruned during execution
+
+
 import math
 
 board = [' ' for _ in range(9)]
