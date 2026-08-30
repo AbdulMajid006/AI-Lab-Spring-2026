@@ -1,3 +1,16 @@
+# Task#2:
+# Alpha-Beta Pruning on Game Tree
+# Use the same tree from Task 1.
+# • Apply Alpha-Beta pruning step-by-step
+# • Track:
+#     o Alpha (α) and Beta (β) values at each node
+# • Identify:
+#     o Pruned branches
+#     o Number of nodes evaluated vs Minimax
+# • Compare efficiency:
+#     o Nodes explored (Minimax vs Alpha-Beta)
+
+
 import math
 
 class Node:
