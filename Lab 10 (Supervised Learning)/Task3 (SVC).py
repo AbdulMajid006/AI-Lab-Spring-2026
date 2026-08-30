@@ -1,3 +1,27 @@
+# Task#3:
+# Customer Churn Prediction:
+# You are working for a telecom company. Your task is to predict whether a customer will churn
+# (leave the service) or not.
+# The dataset includes:
+# • Monthly charges
+# • Contract type
+# • Tenure (how long the customer has stayed)
+# • Internet service type
+# • Customer support calls
+# Perform the following tasks:
+# • Clean the dataset:
+#     o Handle missing values
+#     o Detect and treat outliers
+# • Convert categorical variables into numerical form
+# • Perform feature scaling if needed
+# • Split the dataset into training and testing sets
+# • Train a classification model (e.g., SVM, Random Forest)
+# • Find a decision boundary (hyperplane if applicable)
+# • Extract rules or feature importance from the model
+# • Evaluate performance using confusion matrix, accuracy, precision, recall, and F1-score
+# • Predict whether a new customer will churn
+
+
 import pandas as pd
 import numpy as np
 
