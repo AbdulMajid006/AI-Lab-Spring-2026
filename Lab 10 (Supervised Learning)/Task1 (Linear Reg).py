@@ -1,14 +1,15 @@
-Student Performance Prediction
-You are working as a data scientist for a university. Your goal is to predict a student’s final exam
-score (continuous variable) based on various factors such as study hours, attendance, previous
-grades, participation in class, and internet usage.
-Perform the following tasks:
- Clean the dataset and handle missing values (e.g., missing attendance or study hours).
- Encode categorical variables (e.g., participation level: Low, Medium, High).
- Identify the most important features affecting student performance.
- Train a regression model to predict the final score.
- Evaluate the model using appropriate metrics (e.g., MAE, RMSE, R2).
- Predict the final score for a new student given their features.
+# Task#1:
+# Student Performance Prediction:
+# You are working as a data scientist for a university. Your goal is to predict a student’s final exam
+# score (continuous variable) based on various factors such as study hours, attendance, previous
+# grades, participation in class, and internet usage.
+# Perform the following tasks:
+# • Clean the dataset and handle missing values (e.g., missing attendance or study hours).
+# • Encode categorical variables (e.g., participation level: Low, Medium, High).
+# • Identify the most important features affecting student performance.
+# • Train a regression model to predict the final score.
+# • Evaluate the model using appropriate metrics (e.g., MAE, RMSE, R2).
+# • Predict the final score for a new student given their features.
 
 
 import pandas as pd
