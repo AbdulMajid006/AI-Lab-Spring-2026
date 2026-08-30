@@ -1,5 +1,5 @@
 # Task#2:
-# Alpha-Beta Pruning on Game Tree
+# Alpha-Beta Pruning on Game Tree:
 # Use the same tree from Task 1.
 # • Apply Alpha-Beta pruning step-by-step
 # • Track:
