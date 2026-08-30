@@ -1,5 +1,5 @@
 # Task#1:
-# Bayesian Network for Job Hiring
+# Bayesian Network for Job Hiring:
 # You are modeling whether a candidate gets hired.
 # Nodes:
 # • Education (E) — {High, Low}
