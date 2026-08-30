@@ -1,23 +1,23 @@
-Task#1:
-Bayesian Network for Job Hiring
-You are modeling whether a candidate gets hired.
-Nodes:
- Education (E) — {High, Low}
- Experience (X) — {Experienced, Inexperienced}
- Interview (I) — {Good, Bad}
- HiringDecision (H) — {Hired, NotHired}
-Dependencies:
- Education and Experience influence Interview performance
- Interview influences HiringDecision
-Prior Probabilities:
- P(Education = High) = 0.65, Low = 0.35
- P(Experience = Experienced) = 0.5, Inexperienced = 0.5
-Tasks to do:
- Draw the Bayesian Network structure
- Define CPTs for:
-o Interview | Education, Experience
-o HiringDecision | Interview
- Implement the network using Python (pgmpy or similar)
+# Task#1:
+# Bayesian Network for Job Hiring
+# You are modeling whether a candidate gets hired.
+# Nodes:
+# • Education (E) — {High, Low}
+# • Experience (X) — {Experienced, Inexperienced}
+# • Interview (I) — {Good, Bad}
+# • HiringDecision (H) — {Hired, NotHired}
+# Dependencies:
+# • Education and Experience influence Interview performance
+# • Interview influences HiringDecision
+# Prior Probabilities:
+# • P(Education = High) = 0.65, Low = 0.35
+# • P(Experience = Experienced) = 0.5, Inexperienced = 0.5
+# Tasks to do:
+# • Draw the Bayesian Network structure
+# • Define CPTs for:
+#     o Interview | Education, Experience
+#     o HiringDecision | Interview
+# • Implement the network using Python (pgmpy or similar)
 
 
 from pgmpy.models import DiscreteBayesianNetwork
