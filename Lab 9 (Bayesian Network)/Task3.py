@@ -1,3 +1,26 @@
+# Task#3:
+# Bayesian Network for Online Shopping Behavior:
+# You are modeling whether a user makes a purchase.
+# Nodes:
+# • AdExposure (A) — {Yes, No}
+# • WebsiteExperience (W) — {Good, Poor}
+# • ProductPrice (P) — {High, Low}
+# • Purchase (C) — {Yes, No}
+# Dependencies:
+# • AdExposure influences WebsiteExperience
+# • WebsiteExperience and ProductPrice influence Purchase
+# Prior Probabilities:
+# • P(AdExposure = Yes) = 0.6
+# • P(WebsiteExperience = Good | AdExposure = Yes) = 0.8
+# • P(WebsiteExperience = Good | AdExposure = No) = 0.4
+# • P(ProductPrice = Low) = 0.55
+# • P(ProductPrice = High) = 0.45
+# Tasks to do:
+# • Draw the Bayesian Network structure
+# • Define full CPTs for Purchase
+# • Implement using Python (pgmpy or similar)
+
+
 from pgmpy.models import DiscreteBayesianNetwork
 from pgmpy.factors.discrete import TabularCPD
 from pgmpy.inference import VariableElimination
