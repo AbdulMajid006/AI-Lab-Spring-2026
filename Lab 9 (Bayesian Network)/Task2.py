@@ -1,3 +1,33 @@
+Task#2:
+Bayesian Network for Car Fault Diagnosis:
+You are diagnosing whether a car has an issue based on symptoms.
+Nodes:
+• Fault (F) — {EngineIssue, BatteryIssue}
+• Symptoms:
+    o CarWon’tStart (S) — {Yes, No}
+    o DimLights (D) — {Yes, No}
+    o StrangeNoise (N) — {Yes, No}
+
+Network Structure:
+• Fault → CarWon’tStart
+• Fault → DimLights
+• Fault → StrangeNoise
+Prior Probabilities:
+• P(EngineIssue) = 0.4
+• P(BatteryIssue) = 0.6
+Conditional Probabilities (example assumptions):
+• P(CarWon’tStart = Yes | EngineIssue) = 0.85
+• P(CarWon’tStart = Yes | BatteryIssue) = 0.7
+• P(DimLights = Yes | EngineIssue) = 0.3
+• P(DimLights = Yes | BatteryIssue) = 0.8
+• P(StrangeNoise = Yes | EngineIssue) = 0.75
+• P(StrangeNoise = Yes | BatteryIssue) = 0.2
+Tasks to do:
+1. Construct the Bayesian Network diagram
+2. Define full CPTs for all nodes
+3. Perform inference:
+
+
 from pgmpy.models import DiscreteBayesianNetwork
 from pgmpy.factors.discrete import TabularCPD
 from pgmpy.inference import VariableElimination
