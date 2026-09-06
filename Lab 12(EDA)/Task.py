@@ -1,3 +1,62 @@
+# Task:
+# EXPLORATORY DATA ANALYSIS AND PRICE PREDICTION OF HOUSES:
+# ▪ Perform EDA (Exploratory Data Analysis)
+# ▪ Handle missing values
+# ▪ Analyze feature relationships
+# ▪ Build a basic regression model to predict house prices
+
+# 1. Data Understanding
+# a) Load the dataset using Pandas
+# b) Display:
+#     ▪ First 5 rows
+#     ▪ Dataset shape
+#     ▪ Column names
+# c) Identify:
+#     ▪ Numerical vs Categorical features
+
+# 2. Data Cleaning
+# a) Find missing values
+# b) Handle missing data:
+#     ▪ Numerical → fill with mean/median
+#     ▪ Categorical → fill with mode
+
+# c) Drop columns with too many missing values (e.g., >50%)
+# 3. Univariate Analysis
+# a) Plot distribution of:
+#     ▪ SalePrice
+#     ▪ GrLivArea
+# b) Identify skewness and outliers
+
+# TOOLS:
+# • Histogram
+# • Boxplot
+
+# 4. Bivariate Analysis
+# a) Find correlation with SalePrice
+# b) Plot:
+#     ▪ Scatter plot: GrLivArea vs SalePrice
+#     ▪ Bar plot: OverallQual vs SalePrice
+# c) Identify top 5 features affecting price
+
+# 5. Multivariate Analysis
+# a) Create a correlation heatmap
+# b) Analyze strong positive/negative relationships
+
+# 6. Feature Engineering
+# a) Create new feature:
+#     ▪ HouseAge = YrSold - YearBuilt
+# b) Drop irrelevant features (like Id)
+
+# 7. Model Building
+# a) Split data into training/testing
+# b) Apply:
+#     ▪ Linear Regression
+# c) Evaluate model using:
+#     ▪ MAE
+#     ▪ RMSE
+#     ▪ R2 Score
+
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
