@@ -1,3 +1,14 @@
+# Task#2:
+# A transportation company wants to optimize its routes and fleet by categorizing different
+# types of vehicles based on their usage patterns. The company has data on several features
+# such as: vehicle_serial_no, mileage, fuel_efficiency, maintenance_cost, and vehicle_type. The
+# goal is to create segments of vehicles based on these attributes to help with fleet
+# management. Implement K-Means clustering to group vehicles using all the features.
+# Perform the clustering twice: once without scaling the features and once with scaling applied
+# to all features (except for vehicle_type, which is categorical). Analyze and compare the
+# results, focusing on how the scaling affects the clustering output.
+
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
