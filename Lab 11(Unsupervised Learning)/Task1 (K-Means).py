@@ -1,3 +1,11 @@
+# Task#1:
+# In the example code in lab manual, customer segmentation was performed using only two
+# features. Now, use all available features except customer_id to implement K-Means
+# clustering. Perform the clustering twice — once without feature scaling, and once with
+# scaling applied to all features except age. Compare the results and comment on the
+# differences and insights observed from these changes.
+
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
