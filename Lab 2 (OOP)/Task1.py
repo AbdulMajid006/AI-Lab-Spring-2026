@@ -12,7 +12,6 @@ class Student:
 
     def display_info(self):
         print(f"Name: {self.name}, Roll No: {self.roll_no}, Program: {self.program}")
-        print("Student")
 
 s1 = Student("Ali", 123, "CS")
 s2 = Student("Hammad", 421, "SE")
